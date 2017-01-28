@@ -61,7 +61,7 @@
     <br>
     <div class="input-field input-search">
           <div class="input-box search-box">
-          <input placeholder="Search" id="first_name" type="text" class="validate search-box">
+          <input placeholder="Search" id="first_name"  ng-model="search" type="text" class="validate search-box">
           </div>
           <div class="input-box input-icon">         
           <i class="material-icons">search</i>
@@ -70,25 +70,19 @@
       
         <ul>
           <div class="row container">
-          <li ng-repeat="content in contents">
-           
-           
-              <div class="col s12 l3">
+          <li ng-repeat="content in contents | filter: search">
+           <div class="col s12 l3">
                 <div class="card">
                   <div class="card-image">
                     <img ng-src="{{content.picture}}">
                     <span class="card-title black-text">{{content.countryName}}</span>
                   </div>
-                 
-                  
-                </div>
-              </div>
-            
-                  
+                 </div>
+              </div>    
           </li>
           </div>
-  </ul>
-  </div>
+        </ul>
+        </div>
 
 
 
