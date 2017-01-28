@@ -85,6 +85,41 @@
         </div>
 
 
+ <div class="section section-3 " id="country" ng-controller="listCtrl1">
+
+    <h4 class="header center black-text">Latest news from blog</h4>
+    <h6 class="header center">See what people are sharing their thoughts.</h6>
+    <br>
+      
+        <ul>
+          <div class="row container">
+          <li ng-repeat="content in contents1">
+           <div class="col s12 l4">
+                 <div class="card">
+              <div class="card-image waves-effect waves-block waves-light">
+                 <img ng-src="{{content.image}}" class="activator">
+              </div>
+              <div class="card-content">
+                <span class="card-title activator grey-text text-darken-4">{{content.heading}}<i class="material-icons right">more_vert</i></span>
+                
+              </div>
+              <div class="card-reveal">
+                <span class="card-title grey-text text-darken-4">{{content.heading}}<i class="material-icons right">close</i></span>
+                <p>{{content.description}}.</p>
+              </div>
+            </div> 
+            
+            </div>  
+                       
+          </li>
+          </div>
+        </ul>
+        <div class="row center">
+        <a   class="btn waves-effect waves-light orange">keep Reading</a>
+      </div>
+        </div>
+
+
 
   <div class="section section-4 orange lighten-2" id="discount">
     <div class="row">

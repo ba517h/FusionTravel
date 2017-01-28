@@ -77,3 +77,10 @@
      border-bottom: 1px solid #ffb74d;
      box-shadow: 0 1px 0 0 #ffb74d;
    }
+
+   .morecontent span {
+    display: none;
+}
+.morelink {
+    display: block;
+}
