@@ -7,7 +7,7 @@
  */
 
 .icon-block {
-  padding: 0 15px;
+  padding: 0 0px;
 }
 .icon-block .material-icons {
 	font-size: inherit;
@@ -78,12 +78,6 @@
      box-shadow: 0 1px 0 0 #ffb74d;
    }
 
-   .morecontent span {
-    display: none;
-}
-.morelink {
-    display: block;
-}
 .body
 {
 	margin: 0px;
