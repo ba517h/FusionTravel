@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="App">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
@@ -9,7 +9,8 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-  <script src="https://use.fontawesome.com/c9b030d949.js"></script>
+ 
+
 </head>
 <body>
   <nav class="grey lighten-5 " role="navigation">
@@ -53,8 +54,45 @@
     </div>
   </div>
 
+  <div class="section section-2 " id="country" ng-controller="listCtrl">
 
-  <div class="section section-2 orange lighten-2" id="discount">
+    <h4 class="header center black-text">Find Your Destination</h4>
+    <h6 class="header center">Most popular places are waiting for you.</h6>
+    <br>
+    <div class="input-field input-search">
+          <div class="input-box search-box">
+          <input placeholder="Search" id="first_name" type="text" class="validate search-box">
+          </div>
+          <div class="input-box input-icon">         
+          <i class="material-icons">search</i>
+          </div>
+        </div>
+      
+        <ul>
+          <div class="row container">
+          <li ng-repeat="content in contents">
+           
+           
+              <div class="col s12 l3">
+                <div class="card">
+                  <div class="card-image">
+                    <img ng-src="{{content.picture}}">
+                    <span class="card-title black-text">{{content.countryName}}</span>
+                  </div>
+                 
+                  
+                </div>
+              </div>
+            
+                  
+          </li>
+          </div>
+  </ul>
+  </div>
+
+
+
+  <div class="section section-4 orange lighten-2" id="discount">
     <div class="row">
       
       <div class="center">
@@ -115,8 +153,12 @@
 
 
   <!--  Scripts-->
+  <script>document.write("<base href=\"" + document.location + "\" />");</script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.2/angular.js"></script>
+  <script src="js/app.js"></script>
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
   <script src="js/materialize.js"></script>
+  <script src="https://use.fontawesome.com/c9b030d949.js"></script>
   <script src="js/init.js"></script>
 
   </body>

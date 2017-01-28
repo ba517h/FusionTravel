@@ -40,3 +40,40 @@
 	
 	width: 120px;
 }
+.input-search
+{
+	
+	position: relative;
+	left:37%;
+	margin: 0 auto;
+}
+.input-box
+{
+	display: inline-block;
+
+}
+.input-icon
+{	
+	position: relative;
+	top: 10px;
+}
+.search-box
+{
+	width: 26%;
+}
+@media only screen and (max-width: 601px) {
+	.search-box
+{
+	width: 46%;
+}
+.input-search
+{
+	position: relative;
+	left:25%;
+	margin: 0 auto;
+}
+}
+.input-field input[type=text]:focus {
+     border-bottom: 1px solid #ffb74d;
+     box-shadow: 0 1px 0 0 #ffb74d;
+   }
