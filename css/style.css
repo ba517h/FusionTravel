@@ -5,9 +5,7 @@
  *
  * Made By MaterializeCSS.com
  */
-html {
-	overflow-x:hidden;
-}
+
 .icon-block {
   padding: 0 15px;
 }
@@ -85,4 +83,9 @@ html {
 }
 .morelink {
     display: block;
+}
+.body
+{
+	margin: 0px;
+	padding: 0px;
 }
