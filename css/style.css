@@ -1,0 +1,42 @@
+/* Custom Stylesheet */
+/**
+ * Use this file to override Materialize files so you can update
+ * the core Materialize files in the future
+ *
+ * Made By MaterializeCSS.com
+ */
+
+.icon-block {
+  padding: 0 15px;
+}
+.icon-block .material-icons {
+	font-size: inherit;
+}
+.section-1{
+	background-color: grey;
+}
+.pytrip-button{
+	border-radius: 25px;
+}
+.align-footer{
+	text-align: center;
+}
+.heading-footer {
+	font-weight: 600;
+}
+.follow
+{
+	display: inline;
+}
+.social-icon:hover
+{
+   color: orange;
+}
+.discount-button
+{
+	border: 2px solid white;
+	border-radius: 25px;
+	color: white;
+	
+	width: 120px;
+}
