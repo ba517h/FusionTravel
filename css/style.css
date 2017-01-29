@@ -6,11 +6,7 @@
  * Made By MaterializeCSS.com
  */
 
- html, body {
-    max-width: 100%;
-    overflow-x: hidden;
-}
-
+ 
 .icon-block {
   padding: 0 0px;
 }
@@ -83,3 +79,8 @@
      box-shadow: 0 1px 0 0 #ffb74d;
    }
 
+
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
